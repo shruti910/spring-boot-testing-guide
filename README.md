@@ -6,13 +6,13 @@ The project uses one Spring Boot application to demonstrate testing at different
 
 ## 📚 Series Roadmap
 
-| Part | Article | What You'll Learn |
-|---|---|---|
-| **Part 1** | Testing Fundamentals and Unit Testing with JUnit 5 and Mockito | Testing fundamentals, JUnit 5, Mockito, plain unit tests and service unit tests |
-| **Part 2** | Testing REST APIs and Controllers with MockMvc | Controller tests, MockMvc, `@WebMvcTest`, HTTP responses, request validation and exception handling |
-| **Part 3** | Testing Repositories and Databases with Spring Boot and H2 | Repository tests, `@DataJpaTest`, CRUD operations, custom queries and H2 |
+| Part | Article                                                                                       | What You'll Learn |
+|---|-----------------------------------------------------------------------------------------------|---|
+| **Part 1** | [Testing Fundamentals and Unit Testing with JUnit 5 and Mockito](https://medium.com/@techshrutiprajapati/spring-boot-testing-for-beginners-a-practical-guide-to-junit-5-and-mockito-4c2d11c97693)                            | Testing fundamentals, JUnit 5, Mockito, plain unit tests and service unit tests |
+| **Part 2** | Testing REST APIs and Controllers with MockMvc                                                | Controller tests, MockMvc, `@WebMvcTest`, HTTP responses, request validation and exception handling |
+| **Part 3** | Testing Repositories and Databases with Spring Boot and H2                                    | Repository tests, `@DataJpaTest`, CRUD operations, custom queries and H2 |
 | **Part 4** | Integration Testing in Spring Boot: External APIs, Code Coverage and the Complete Application | External HTTP client tests, `@SpringBootTest`, application integration, JaCoCo and code coverage |
-| **Part 5** | Test-Driven Development (TDD) with Spring Boot: Build Features by Writing Tests First | Red-Green-Refactor cycle and implementing a feature by writing tests first |
+| **Part 5** | Test-Driven Development (TDD) with Spring Boot: Build Features by Writing Tests First         | Red-Green-Refactor cycle and implementing a feature by writing tests first |
 
 *Links to the articles will be added here as they are published.*
 
@@ -101,7 +101,7 @@ mvn -version
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-github-username>/spring-boot-testing-guide.git
+git clone https://github.com/shruti910/spring-boot-testing-guide.git
 ```
 
 ### 2. Navigate to the project directory
@@ -194,21 +194,6 @@ Tests should not depend on the live public API. The series demonstrates how to t
 
 ---
 
-## ✅ Input Validation
-
-`UserRequest` uses Jakarta Bean Validation annotations.
-
-Examples include:
-
-- `@NotBlank` — Ensures the user's name and email are not blank.
-- `@Email` — Validates the email address format.
-
-The controller triggers validation for incoming requests.
-
-Controller-level validation behaviour is explored in Part 2.
-
----
-
 ## 🗄️ H2 Database Console
 
 When the application is running, open:
@@ -246,6 +231,7 @@ user-management-api/
 │   │   │   ├── exception/
 │   │   │   ├── repository/
 │   │   │   ├── service/
+│   │   │   ├── util/
 │   │   │   └── UserManagementApplication.java
 │   │   │
 │   │   └── resources/
